@@ -1,3 +1,6 @@
 # maven-project
 
-Simple Maven Project
+Simple Maven Java Web Application
+
+Docker image to be created from this App
+
