@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: codehero92/hello-world-webapp
+        image: codehero92/hello-world-webapp:1.0
         ports:
         - containerPort: 8080
