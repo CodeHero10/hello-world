@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-HelloWorld-app
+  name: my-helloWorld-app
   labels:
     app: HelloWorld
 spec:
