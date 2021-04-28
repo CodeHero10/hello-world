@@ -1,35 +1,35 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-helloWorld-svc
+  name: my-helloworld-svc
   labels:
-    app: helloWorld
+    app: helloworld
 spec:
   type: NodePort
   ports:
   - port: 8080
     targetPort: 8080
   selector:
-    app: helloWorld
+    app: helloworld
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-helloWorld-app
+  name: my-helloworld-app
   labels:
-    app: helloWorld
+    app: helloworld
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: helloWorld
+      app: helloworld
   template:
     metadata:
       labels:
-        app: helloWorld
+        app: helloworld
     spec:
       containers:
-      - name: helloWorld
+      - name: helloworld
         image: codehero92/hello-world-webapp
         ports:
         - containerPort: 8080
