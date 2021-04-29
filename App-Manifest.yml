@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-helloworld-svc
+  name: my-helloworld-service
   labels:
     app: helloworld
 spec:
@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: codehero92/hello-world-webapp:1.0
+        image: codehero92/hello-world-webapp:hello-world-webapp
         ports:
         - containerPort: 8080
