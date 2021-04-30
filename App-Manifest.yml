@@ -5,9 +5,10 @@ metadata:
   labels:
     app: helloworld
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 8080
+    protocol: TCP
     targetPort: 8080
   selector:
     app: helloworld
